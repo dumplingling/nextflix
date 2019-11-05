@@ -1,0 +1,119 @@
+{
+  "id": "cf18e23d-74c6-4f42-8008-ae7ccd6920d1",
+  "name": "movie-starter",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "movie-starter",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "96e87db2-9de3-4a02-bb5f-d355ee9bb2f8",
+          "required": true,
+          "dataType": "@movie-type",
+          "name": "movie-type",
+          "value": "$movie-type",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": "Alright, let me search for a $movie-type movie for you"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "645ce916-57fa-4579-9d87-901d62a70a73",
+      "data": [
+        {
+          "text": "Hi I would like to watch a ",
+          "userDefined": false
+        },
+        {
+          "text": "sports",
+          "alias": "movie-type",
+          "meta": "@movie-type",
+          "userDefined": true
+        },
+        {
+          "text": " movie!",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "87359027-e34d-42ae-aea5-2c3a3f4f7d7a",
+      "data": [
+        {
+          "text": "Hi, I would like to watch an ",
+          "userDefined": false
+        },
+        {
+          "text": "action",
+          "alias": "movie-type",
+          "meta": "@movie-type",
+          "userDefined": true
+        },
+        {
+          "text": " movie!",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8b7e9174-c05a-4f43-af66-dda23d280b30",
+      "data": [
+        {
+          "text": "Hi, I would like to watch a ",
+          "userDefined": false
+        },
+        {
+          "text": "romance",
+          "alias": "movie-type",
+          "meta": "@movie-type",
+          "userDefined": true
+        },
+        {
+          "text": " movie!",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}
